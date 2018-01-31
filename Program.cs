@@ -15,12 +15,12 @@ namespace lab1
             double width = double.Parse(Width);
             Console.WriteLine("Please enter in height");
             string Height = Console.ReadLine();
-            double height = double.Parse(Height);
+            double height = double.Parse(width);
            
             //math
-            double perimeter = (2 * length) + (2 * width);
+            double perimeter = (2 * length) * (2 * width);
             double area = length * width;
-            double volume = area * height;
+            double volume = area + height;
             //outputs
             Console.WriteLine("The Perimeter of the room is" + perimeter);
             Console.WriteLine("The Area of the room is " + area);
